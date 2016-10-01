@@ -18,6 +18,8 @@ MOSI (DI)    A5
 
 You'll need to use the program [here] (https://github.com/rickkas7/sdfirmwareflash/blob/master/sdfirmwareflash.cpp), or more likely integrate the code into your application. You'll also need to use the [SDFAT library] (https://github.com/greiman/SdFat-Particle) which is also in the Particle Community Libraries as "SDFAT."
 
+Even though the SDFAT library seems large, the final test program binary is only 10,924 bytes, so if you add the stuff into your own program it's only an additional 6K or so of additional overhead. Not bad!
+
 To use it, put these files at the top level of the SD card:
 
 ```
